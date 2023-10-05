@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HM Form | Home</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <form action="database.php" method="post">
+       <h1 class="main_heading">Information Collection</h1> 
+       <h2>Details of Students</h2>
+       <p>Required Fields are followed by *</p>
+       <p>Name *: <input type="text" name="name" required placeholder="Jahanvi" id="name"> </p>
+        <fieldset>
+            <legend> Gender * </legend>
+   <input type="radio" id="male" name="gender" value="m">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="f">
+  <label for="female">Female</label><br>
+</fieldset>
+    
+    <p>Age *<input type="number" name="age" required id="age"></p>
+    <p>Address: <textarea name="address" id="address" cols="100" rows="8"></textarea> </p>
+    <p>Email *: <input type="Email" name="Email" id="Email" required> </p>
+    
+    <input name="submit" type="submit">
+    </form>
+</div>
+</body>
+</html>
